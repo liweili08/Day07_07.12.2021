@@ -38,13 +38,13 @@ return countStudent;
 
     }
 
-    public int getBestStudents(){
-    return note;
-    }
+//    public int getBestStudents(){
+//    return note;
+//    }
 
-    public int getAverageGrade(){
-    return note;
-    }
+//    public int getAverageGrade(){
+//    return note;
+//    }
 
     public void getStudentRepresentative(){
 
