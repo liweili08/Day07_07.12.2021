@@ -1,16 +1,19 @@
-package Vererbung;
+package NewUniversity;
 
-abstract class AbstractStudent {
+abstract class AbstractUniStudent {
     String name;
     int age;
     boolean isMale;
+    double note;
+    boolean isRepresentative; //ist der Student der Studenten-Vertreter?
 
-    public AbstractStudent(String name, int age, boolean isMale) {
+    public AbstractUniStudent(String name, int age, boolean isMale) {
         this.name = name;
         this.age = age;
         this.isMale = isMale;
     }
 
+    //normal method
     public String getName() {
         return name;
     }
@@ -35,7 +38,9 @@ abstract class AbstractStudent {
         isMale = male;
     }
 
-    public abstract void anzahlModule();
+
+    //abstract method
+    public abstract int anzahlModule();
 
 }
 
