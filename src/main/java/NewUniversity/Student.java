@@ -3,9 +3,17 @@ package NewUniversity;
 public class Student {
     public String name;
     private int age;
-    private boolean isMale;
+    private int studentId;
     double note;
     boolean isRepresentative; //ob der Student der Studenten-Vertreter ist
+
+    //Constructor
+    public Student(String name, int age, int studentId) {
+        this.name = name;
+        this.age = age;
+        this.studentId = studentId;
+    }
+
 
     public String getName() {
         return name;
@@ -23,32 +31,21 @@ public class Student {
         this.age = age;
     }
 
-    public boolean isMale() {
-        return isMale;
+    public int getStudentId() {
+        return studentId;
     }
 
-    public void setMale(boolean male) {
-        isMale = male;
+    public void setStudentId(int studentId) {
+        this.studentId = studentId;
     }
 
     @Override
     public String toString() {
-        return "model.Student{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", isMale=" + isMale +
-                '}';
+        return "Name=" + name + '\'' +
+                ", Age=" + age +
+                ", StudentId=" + studentId;
     }
 
-    public Student(String name, int age, boolean isMale) {
-        this.name = name;
-        this.age = age;
-        this.isMale = isMale;
-//        public Student(String name, int age) {
-//            this.name = name;
-//            this.age = age;
-//            this.isMale = false;
-    }
 
 
 }

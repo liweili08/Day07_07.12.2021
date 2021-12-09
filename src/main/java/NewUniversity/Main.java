@@ -16,8 +16,8 @@ public class Main {
         students[4] = stu5;
         University myUni = new University("RWTH", students, true);
 
-        myUni.getStudentArray();
-        myUni.getStudentCount();
+//        myUni.getStudentArray();
+//        myUni.getStudentCount();
 
 //Student[] testList = generateStudentList();
     }

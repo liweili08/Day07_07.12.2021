@@ -12,37 +12,41 @@ public class University {
         this.studentRepresentative = studentRepresentative;
     }
 
-
-    public University(String uniName, Student[] students, boolean studentRepresentative) {
-        this.uniName = uniName;
-        this.studentArray = studentArray;
-        this.studentRepresentative = studentRepresentative;
+    //Methode listStudents: gibt alle Studenten zurück
+    public void toList() {
+        for (int i = 0; i < this.studentArray.length; i++) {
+            System.out.println( this.studentArray[i].toString());
+        };
+        return;
     }
+
+    public int getStudentCount(){
+        int studentCounter = 0;
+        for (int i = 0; i < this.studentArray.length; i++) {
+            if (this.studentArray[i] != null){
+                studentCounter++;
+            }
+        };
+        return studentCounter;
+    }
+
+
 
 //    public Student[] getStudents{
 //return students;
 //    }
 
 
-    public Student[] getStudentArray() {
-        return students;
-    }
+  //  public Student[] getStudentArray() {
+  //      return studentArray;
+   // }
 
-    public int getStudentCount(){
-        int countStudent =0;
-        for (int i=0; i<students.length;i++){
-            if(students[i]!= null){
-                countStudent++;
-            }
-        }
-return countStudent;
-    }
 
-    public void addStudent(){
+  //  public void addStudent(){
 
     }
 
-    public void removeStudents(){
+ //   public void removeStudents(){
 
     }
 
@@ -54,7 +58,7 @@ return countStudent;
 //    return note;
 //    }
 
-    public void getStudentRepresentative(){
+ //   public void getStudentRepresentative(){
 
     }
 
